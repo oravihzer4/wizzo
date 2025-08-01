@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Noto+Sans+Hebrew:wght@100..900&display=swap");
+body {
+  font-family: "Noto Sans Hebrew", sans-serif;
+  background-color: #fbf8ff;
+}
+
+.mainNav {
+  width: 1920px;
+  height: 114px;
+  border: 1px;
+}
+
+.topNav {
+  background-color: #5806c7;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 57px;
+  position: relative;
+
+  .links {
+    display: flex;
+    gap: 1rem;
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+
+    .social-icon {
+      width: 35px;
+      height: 35px;
+      background-color: white;
+      border-radius: 50%;
+      color: #f15723;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+  }
+}
+
+.bottomNav {
+  background-color: #ffffff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 57px;
+  position: relative;
+  .links {
+    display: flex;
+    gap: 1rem;
+
+    a {
+      color: #404040;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f15723;
+
+  input {
+    border: 1px solid #f15723;
+    color: #f15723;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 14px;
+    outline: none;
+  }
+
+  button {
+    background: none;
+    border: none;
+    color: #f15723;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.site-logo {
+  height: 114px;
+  top: 23px;
+  left: 1723px;
+  padding: 25px;
+}
+.logoBox {
+  background-color: white;
+  height: 114px;
+}
+.home {
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  background-color: #5806c7;
+
+  color: white;
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    .social-icon {
+      margin-top: 30px;
+      width: 35px;
+      height: 35px;
+      background-color: #5806c7;
+      border-radius: 50%;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+  }
+}
+.site-logo-foot {
+  height: 114px;
+  top: 23px;
+  left: 1723px;
+  padding: 25px;
+  background-color: #ffffff;
+}
+.mediaTopFooter {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+.readMore {
+  color: #f15723;
+  text-decoration: none;
+}
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 4px;
+  transition: color 0.2s ease;
+}
+.allrightsreserved {
+  height: 105px;
+  width: 1942px;
+  background-color: #130822;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+.rightsLogo {
+  width: 325px;
+  height: 27px;
+}
+.articleGrid {
+  width: 1200px;
+  height: 316px;
+  top: 1826px;
+  left: 360px;
+  margin: 20px;
+  padding: 20px;
+}
+.magazineContainer {
+  .letterTitle {
+    height: 48px;
+    width: 47px;
+    margin-left: 15px;
+  }
+  width: 1200px;
+  height: 4137px;
+  display: flex;
+  flex-direction: column;
+}
+.mgz-item {
+  background-color: white;
+  padding: 7px;
+  margin: 4px;
+}
+.gridTitle {
+  display: flex;
+}
+.lines {
+  background: var(--bg-color);
+  height: 1px;
+  width: 785px;
+  display: block;
+  align-self: flex-end;
+  padding-right: 45px;
+}
+.toPageBtn {
+  width: 117px;
+  height: 25px;
+  top: 30px;
+  border: 1px;
+}
