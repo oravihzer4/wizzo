@@ -6,6 +6,7 @@ import MYellow from "../media/MYellow.svg";
 import line2 from "../media/line2.png";
 import toPageBtnYellow from "../media/toPageBtnYellow.png";
 import topImg from "../media/topAdd.png";
+import lightBlueGroup from "../media/lightBlueGroup.png";
 
 const sections = [
   { title: "נדל״ן למגורים", icon: MYellow },
@@ -18,7 +19,7 @@ const sections = [
 ];
 
 const Section = ({ title, icon, articles }) => (
-  <div className="articleGrid container my-3 " dir="rtl">
+  <div className="articleGrid container my-5 " dir="rtl">
     <div className="gridTitle text-center">
       <img src={icon} alt="section-icon" className="letterTitle mb-2" />
       <h4 className="mt-3">{title}</h4>
@@ -28,12 +29,27 @@ const Section = ({ title, icon, articles }) => (
     <div className="row g-4">
       {articles.slice(0, 4).map((article, idx) => (
         <div className="col-12 col-md-6 col-lg-3 mb-5" key={idx}>
-          <div className="mgz-item h-100 text-end ">
-            <img
-              src={femaleAvatar}
-              alt={article.title}
-              className="img-fluid mb-2"
-            />
+          <div className="mgz-item h-100 text-end">
+            <div className="position-relative">
+              <img
+                src={femaleAvatar}
+                alt={article.title}
+                className="img-fluid mb-2"
+              />
+
+              <img
+                src={lightBlueGroup}
+                alt="תגית"
+                className="position-absolute"
+                style={{
+                  bottom: "8px",
+                  right: "0",
+                  width: "117px",
+                  height: "24px",
+                }}
+              />
+            </div>
+
             <p className="mb-5">{article.description}</p>
             <small className="text-muted d-block small">
               {article.time} | {article.writer}
@@ -47,7 +63,7 @@ const Section = ({ title, icon, articles }) => (
 
 const MagazineBanners = () => {
   return (
-    <div className="magazineContainer mt-3" dir="rtl">
+    <div className="magazineContainer mt-5" dir="rtl">
       {sections.map((section, idx) => {
         const isLast = idx === sections.length - 1;
         const shouldRenderAd = (idx + 1) % 2 === 0 && !isLast;

@@ -1,5 +1,6 @@
 import articles from "../data/articlesData.js";
 import femaleAvatar from "../media/femaleAvatar.jpg";
+import redGroup from "../media/redGroup.png";
 
 const MoreArticles = () => {
   const sideArticles = articles;
@@ -11,12 +12,25 @@ const MoreArticles = () => {
         {sideArticles.slice(0, 6).map((article, idx) => (
           <div className="col-md-4" key={idx}>
             <div className="bg-white h-100 text-end p-1">
-              <img
-                src={femaleAvatar}
-                className="img-fluid "
-                alt={article.title}
-                style={{ width: "100%", height: "auto" }}
-              />
+              <div className="position-relative">
+                <img
+                  src={femaleAvatar}
+                  className="img-fluid"
+                  alt={article.title}
+                  style={{ width: "100%", height: "auto" }}
+                />
+                <img
+                  src={redGroup}
+                  alt="תגית"
+                  className="position-absolute"
+                  style={{
+                    bottom: "0",
+                    right: "0",
+                    width: "117px",
+                    height: "24px",
+                  }}
+                />
+              </div>
               <p className="mb-2">{article.description}</p>
               <small className="text-muted">
                 {article.time} | {article.writer}

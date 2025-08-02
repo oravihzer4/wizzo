@@ -1,15 +1,13 @@
 import topImg from "../media/topAdd.png";
 import add2 from "../media/add2.png";
 import mainHero from "../media/hero1.png";
-import articles from "../data/articlesData.js";
-import femaleAvatar from "../media/femaleAvatar.jpg";
 import lightGreenTag from "../media/lightGreenTag.png";
 import MoreArticles from "./MoreArticles.jsx";
 const MainHero = () => {
   return (
     <>
-      <main className="col-md-8 bg-light p-3">
-        <div className="w-100 text-center mt-1 mb-5 ">
+      <main className="col-md-8 mt-5 border-start text-dark border-2 mx-auto">
+        <div className="w-100 text-center mt-5 mb-5 ">
           <img src={topImg} alt="פרסומת עליונה" className="img-fluid" />
         </div>
 
@@ -24,15 +22,15 @@ const MainHero = () => {
               />
             </div>
 
-            <div className="col-md-6 d-flex flex-column p-4 text-end">
+            <div className="col-md-6 d-flex flex-column p-4 text-end ">
               <small>11:06 | דורון ברויטמן</small>
-              <h3 className="mb-4 fw-bold">
+              <h3 className="mb-4 fw-bold ">
                 אושרה תוכנית העיצוב של צמח המרמן ואזורים למגדל יוקרה במתחם דפנה
               </h3>
               <p>
                 כשנתיים לאחר הזכייה במכרז דיירים, אושרה תוכנית העיצוב האדריכלי
                 לפרויקט פינוי-בינוי במסגרתו ייהרסו במרכז ת"א 66 דירות וייבנה
-                מגדל בן 25 קומות{" "}
+                מגדל בן 25 קומות
               </p>
             </div>
           </div>

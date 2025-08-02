@@ -1,4 +1,3 @@
-import articles from "../data/articlesData.js";
 import Footer from "./Footer.jsx";
 import MagazineBanners from "./MagazineBanners.jsx";
 import MainHero from "./MainHero.jsx";
@@ -7,11 +6,9 @@ import NadlanTV from "./NadlanTV.jsx";
 import Podcasts from "./Podcasts.jsx";
 
 const Home = () => {
-  const sideArticles = articles;
-
   return (
-    <>
-      <div>
+    <div>
+      <div className="d-none d-md-block">
         <div className="container">
           <div
             className="row flex-column flex-md-row-reverse align-items-center align-items-md-start"
@@ -31,7 +28,11 @@ const Home = () => {
         <Podcasts />
         <Footer />
       </div>
-    </>
+
+      <div className="d-block d-md-none">
+        <MainHero />
+      </div>
+    </div>
   );
 };
 

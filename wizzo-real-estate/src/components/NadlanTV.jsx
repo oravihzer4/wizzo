@@ -4,6 +4,7 @@ import tvLine from "../media/tvLine.png";
 import tvMainVideo from "../media/tvMainVideo.png";
 import articleImg from "../media/tvVideos.png";
 import tvTag from "../media/tvTag.png";
+import playVideo from "../media/playVideo.png";
 
 const NadlanTV = () => {
   const description =
@@ -11,7 +12,7 @@ const NadlanTV = () => {
   const date = "18.09.24  |  מרכז הנדל";
 
   return (
-    <div className="tvDiv container-fluid" id="nadlan" dir="rtl">
+    <div className="tvDiv container-fluid mt-5" id="nadlan" dir="rtl">
       <div className="d-flex flex-column justify-content-center align-items-center inTvDiv">
         <div className="tvTitle d-flex flex-row justify-content-center align-items-center gap-3 flex-wrap mb-4">
           <div className="d-flex flex-row align-items-center">
@@ -30,6 +31,20 @@ const NadlanTV = () => {
           <div className="mainVideo text-white p-2">
             <div className="position-relative">
               <img src={tvMainVideo} alt="Main Hero" className="img-fluid" />
+
+              <img
+                src={playVideo}
+                alt="Play"
+                className="position-absolute"
+                style={{
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                  width: "83px",
+                  height: "83px",
+                }}
+              />
+
               <img
                 src={tvTag}
                 alt="tvTag"
@@ -52,17 +67,32 @@ const NadlanTV = () => {
             {[1, 2, 3].map((_, idx) => (
               <div
                 key={idx}
-                className="d-flex text-light"
+                className="d-flex text-light mb-3"
                 style={{ backgroundColor: "#130822" }}
               >
                 <div className="position-relative">
                   <img src={articleImg} className="tvVideos p-2" />
+
+                  <img
+                    src={playVideo}
+                    alt="Play"
+                    className="position-absolute"
+                    style={{
+                      top: "50%",
+                      left: "50%",
+                      transform: "translate(-50%, -50%)",
+                      width: "50px",
+                      height: "50px",
+                    }}
+                  />
+
                   <img
                     src={tvTag}
                     alt="tvTag"
                     className="position-absolute bottom-0 end-0 p-2"
                   />
                 </div>
+
                 <div className="p-2 text-end d-flex flex-column justify-content-center">
                   <p className="mb-1">{description}</p>
                   <small className="text-secondary">{date}</small>

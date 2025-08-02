@@ -28,7 +28,7 @@ const Podcasts = () => {
                     <img
                       src={podcast.img}
                       alt={podcast.title}
-                      className="img-fluid p-2"
+                      className="img-fluid p-3"
                       style={{
                         maxWidth: "200px",
                         maxHeight: "100%",
@@ -47,26 +47,15 @@ const Podcasts = () => {
                   </div>
                 </div>
 
-                <img
-                  src={playBtn}
-                  alt="Play"
-                  style={{
-                    position: "absolute",
-                    top: "10px",
-                    left: "10px",
-                    width: "50px",
-                    height: "24px",
-                    cursor: "pointer",
-                  }}
-                />
+                <img src={playBtn} className="playBtn" alt="Play" />
 
                 <img
                   src={podBtn}
                   alt="Podcast"
                   style={{
                     position: "absolute",
-                    bottom: "8px",
-                    right: "8px",
+                    bottom: "20px",
+                    right: "16px",
                     width: "132px",
                     height: "27px",
                     cursor: "pointer",
