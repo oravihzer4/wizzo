@@ -1,38 +1,32 @@
 import articles from "../data/articlesData.js";
 import femaleAvatar from "../media/femaleAvatar.jpg";
+
 const MoreArticles = () => {
   const sideArticles = articles;
+
   return (
-    <>
-      <div className="d-md-none mb-3 text-end">
-        <button
-          className="btn btn-outline-secondary"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mobileSidebar"
-          aria-expanded="false"
-          aria-controls="mobileSidebar"
-        >
-          ☰ כתבות נצפות
-        </button>
-        <div className="collapse mt-2" id="mobileSidebar">
-          {sideArticles.slice(0, 5).map((article, idx) => (
-            <div className=" p-2 shadow-sm mb-2" key={idx}>
+    <div className="container text-center my-5" dir="rtl">
+      <h4 className="fw-bold mb-4">כתבות נוספות</h4>
+      <div className="row g-4">
+        {sideArticles.slice(0, 6).map((article, idx) => (
+          <div className="col-md-4" key={idx}>
+            <div className="bg-white h-100 text-end p-1">
               <img
                 src={femaleAvatar}
+                className="img-fluid "
                 alt={article.title}
-                className="img-fluid mb-2"
+                style={{ width: "100%", height: "auto" }}
               />
-              <small className="text-muted d-block mb-1">
-                🕒 {article.time} | ✍️ {article.writer}
+              <p className="mb-2">{article.description}</p>
+              <small className="text-muted">
+                {article.time} | {article.writer}
               </small>
-              <h6 className="mb-1">{article.title}</h6>
-              <p>{article.description}</p>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
+
 export default MoreArticles;

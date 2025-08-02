@@ -70,30 +70,6 @@ body {
   }
 }
 
-.search-bar {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #f15723;
-
-  input {
-    border: 1px solid #f15723;
-    color: #f15723;
-    border-radius: 20px;
-    padding: 6px 12px;
-    font-size: 14px;
-    outline: none;
-  }
-
-  button {
-    background: none;
-    border: none;
-    color: #f15723;
-    font-weight: bold;
-    cursor: pointer;
-  }
-}
-
 .site-logo {
   height: 114px;
   top: 23px;
@@ -137,12 +113,12 @@ footer {
   top: 23px;
   left: 1723px;
   padding: 25px;
-  background-color: #ffffff;
+  background-color: #fbf8ff;
 }
 .mediaTopFooter {
   display: flex;
   justify-content: space-between;
-  background-color: #ffffff;
+  background-color: #fbf8ff;
 }
 .readMore {
   color: #f15723;
@@ -156,11 +132,14 @@ footer {
 }
 .allrightsreserved {
   height: 105px;
-  width: 1942px;
+  width: 100%;
   background-color: #130822;
   display: flex;
   justify-content: space-around;
   padding: 30px;
+}
+.mainHero {
+  background-color: white;
 }
 .rightsLogo {
   width: 325px;
@@ -173,6 +152,9 @@ footer {
   left: 360px;
   margin: 20px;
   padding: 20px;
+  small {
+    font-size: 11px;
+  }
 }
 .magazineContainer {
   .letterTitle {
@@ -206,4 +188,93 @@ footer {
   height: 25px;
   top: 30px;
   border: 1px;
+}
+.tvDiv {
+  background-color: #0b0119;
+  width: 1920px;
+  height: 876px;
+  top: 6182px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.inTvDiv {
+  width: 1250px;
+  height: 652px;
+  top: 6294px;
+  left: 335px;
+  opacity: 1;
+  margin-top: 100px;
+}
+.tvInfo {
+  width: 1250px;
+  height: 652px;
+  top: 6294px;
+  left: 335px;
+}
+
+.tvTitle {
+  width: 1250px;
+  height: 48px;
+  top: 6294px;
+  left: 335px;
+}
+.mainVideo {
+  width: 617px;
+  height: 581px;
+  top: 6365px;
+  left: 968px;
+  background-color: #130822;
+}
+img:hover {
+  opacity: 95%;
+}
+.tvVideos {
+  background-color: #130822;
+}
+#searchBar {
+  width: 298px;
+  height: 36px;
+  top: 69px;
+  left: 22px;
+  border-width: 1px;
+  border: 1px solid #f15723;
+  border-radius: 60px;
+  color: #f15723;
+}
+#searchBar::placeholder {
+  font-size: 12px;
+  font-weight: 300;
+  color: #f15723;
+  opacity: 1;
+  padding-right: 15px;
+}
+.lineY {
+  width: 1437.0000000000014px;
+  height: 0px;
+  top: 195px;
+  left: 668px;
+  border-width: 1px;
+  opacity: 0.42;
+}
+.podcasts {
+  margin-top: 60px;
+  width: 1258px;
+  height: 591px;
+  top: 7277px;
+  left: 331px;
+  gap: 31px;
+  opacity: 1;
+}
+.podcastPost {
+  width: 617px;
+  height: 248px;
+  opacity: 1;
+  background-color: white;
+}
+.podcastsPosts {
+  width: 1258px;
+  height: 512px;
+  gap: 21px;
+  opacity: 1;
 }

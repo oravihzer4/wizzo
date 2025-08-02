@@ -12,7 +12,11 @@ import {
 } from "react-icons/fa";
 const Footer = () => {
   return (
-    <footer className=" d-flex flex-column align-items-center mt-5" dir="rtl">
+    <footer
+      className=" d-flex flex-column align-items-center mt-5"
+      id="footer"
+      dir="rtl"
+    >
       <div className="mb-4" style={{ height: "120px", width: "1000px" }}>
         <div className="mediaTopFooter">
           <div className="logoBoxFoot">

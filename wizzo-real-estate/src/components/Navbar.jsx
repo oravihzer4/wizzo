@@ -7,6 +7,7 @@ import {
   FaFacebook,
   FaLinkedin,
   FaInstagram,
+  FaInstagramSquare,
 } from "react-icons/fa";
 const Navbar = () => {
   return (
@@ -23,29 +24,29 @@ const Navbar = () => {
               <a href="#">נדל״ן למגורים</a> <a href="#">התחדשות עירונית</a>
               <a href="#">נדל״ן מניב / השקעות</a> <a href="#">דעות וניתוחים</a>
               <a href="#">חדשות הענף</a> <a href="#">עיצוב ואדריכלות</a>
-              <a href="#">TV / כתבות</a> <a href="#">פודקאסטים</a>
+              <a href="#nadlan">נדל״ן TV</a> <a href="#podcasts">פודקאסטים</a>
             </div>
             <div className="social-icons d-flex gap-2">
               <div className="social-icon">
-                <FaYoutube />
-              </div>
-              <div className="social-icon">
-                <FaTimes />
-              </div>
-              <div className="social-icon">
-                <FaWhatsapp />
-              </div>
-              <div className="social-icon">
-                <FaTiktok />
-              </div>
-              <div className="social-icon">
-                <FaFacebook />
+                <FaInstagram />
               </div>
               <div className="social-icon">
                 <FaLinkedin />
               </div>
               <div className="social-icon">
-                <FaInstagram />
+                <FaFacebook />
+              </div>
+              <div className="social-icon">
+                <FaTiktok />
+              </div>
+              <div className="social-icon">
+                <FaWhatsapp />
+              </div>
+              <div className="social-icon">
+                <FaTimes />
+              </div>
+              <div className="social-icon">
+                <FaYoutube />
               </div>
             </div>
           </div>
@@ -53,14 +54,9 @@ const Navbar = () => {
             <div className="links d-flex flex-wrap">
               <a href="#">מדד התחדשות עירונית</a> <a href="#">מחשבונים</a>
               <a href="#">נדל״ן בראש צעיר</a> <a href="#">אודות מרכז הנדל</a>
-              <a href="#">מכללת מרכז הנדל״ן</a> <a href="#">צור קשר</a>
+              <a href="#">מכללת מרכז הנדל״ן</a> <a href="#footer">צור קשר</a>
             </div>
-            <div className="navbar-search">
-              <div className="search-bar">
-                <input type="text" placeholder="חיפוש" />
-                <i className="bi bi-search text-dark"></i>
-              </div>
-            </div>
+            <input type="text" id="searchBar" placeholder="חיפוש" />
           </div>
         </nav>
       </div>
