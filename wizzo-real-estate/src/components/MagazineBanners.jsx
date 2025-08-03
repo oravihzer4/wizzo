@@ -23,8 +23,8 @@ const Section = ({ title, icon, articles }) => (
     <div className="gridTitle text-center">
       <img src={icon} alt="section-icon" className="letterTitle mb-2" />
       <h4 className="mt-3">{title}</h4>
-      <img src={line2} alt="divider" className="lines my-4" />
-      <img src={toPageBtnYellow} alt="לכל הכתבות" className="toPageBtn mt-2" />
+      <img src={line2} className="lines my-4" />
+      <img src={toPageBtnYellow} className="toPageBtn mt-2" />
     </div>
     <div className="row g-4">
       {articles.slice(0, 4).map((article, idx) => (
@@ -36,7 +36,7 @@ const Section = ({ title, icon, articles }) => (
                 alt={article.title}
                 className="img-fluid mb-2"
               />
-              <img src={lightBlueGroup} alt="תגית" className="lightBlueTag" />
+              <img src={lightBlueGroup} className="lightBlueTag" />
             </div>
             <p className="mb-5">{article.description}</p>
             <small className="text-muted d-block small">
@@ -64,11 +64,7 @@ const MagazineBanners = () => {
             />
             {shouldRenderAd && (
               <div className="mt-5 m-3 p-1 text-center">
-                <img
-                  src={topImg}
-                  alt="פרסומת עליונה"
-                  className="img-fluid m-4"
-                />
+                <img src={topImg} alt="TopAd" className="img-fluid m-4" />
               </div>
             )}
           </div>

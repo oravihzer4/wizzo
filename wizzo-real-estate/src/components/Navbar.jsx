@@ -98,7 +98,7 @@ const Navbar = () => {
             />
           </a>
           <button
-            className="btn text-white p-3"
+            className=" toggleHamburger"
             onClick={toggleMobileMenu}
             aria-label="Toggle Menu"
             style={{ border: "none", background: "transparent" }}

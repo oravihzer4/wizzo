@@ -6,7 +6,7 @@ const MainHero = () => {
   return (
     <>
       <main className="col-md-8 mt-5 border-start text-dark border-2 mx-auto">
-        <div className="w-100 text-center mt-5 mb-5 ">
+        <div className="w-100 text-center mt-5 mb-5">
           <img src={topImg} alt="Top Add" className="img-fluid" />
         </div>
 
@@ -14,17 +14,7 @@ const MainHero = () => {
           <div className="row g-0 flex-md-row-reverse ">
             <div className="col-md-6 position-relative">
               <img src={mainHero} alt="Main Hero" className="img-fluid" />
-              <img
-                src={lightGreenTag}
-                alt="Green Tag"
-                className="position-absolute "
-                style={{
-                  width: "166px",
-                  height: "37px",
-                  top: "250px",
-                  left: "261px",
-                }}
-              />
+              <img src={lightGreenTag} alt="Green Tag" className="greenTag" />
             </div>
 
             <div className="col-md-6 d-flex flex-column p-4 text-end ">
