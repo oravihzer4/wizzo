@@ -21,13 +21,7 @@ const MostViewd = () => {
               <img
                 src={orangeGroup}
                 alt="תגית"
-                className="position-absolute"
-                style={{
-                  bottom: "8px",
-                  right: "0",
-                  width: "117px",
-                  height: "24px",
-                }}
+                className="position-absolute orangeTag"
               />
             </div>
             <p className="px-1">{article.description}</p>

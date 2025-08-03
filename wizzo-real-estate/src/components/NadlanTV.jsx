@@ -5,12 +5,10 @@ import tvMainVideo from "../media/tvMainVideo.png";
 import articleImg from "../media/tvVideos.png";
 import tvTag from "../media/tvTag.png";
 import playVideo from "../media/playVideo.png";
-
 const NadlanTV = () => {
   const description =
     "מי אחראי? עד כמה המדינה והמחוקק צריכים להתערב בעסקאות התחדשות עירונית";
-  const date = "18.09.24  |  מרכז הנדל";
-
+  const date = "18.09.24 | מרכז הנדל";
   return (
     <div className="tvDiv container-fluid mt-5" id="nadlan" dir="rtl">
       <div className="d-flex flex-column justify-content-center align-items-center inTvDiv">
@@ -26,32 +24,21 @@ const NadlanTV = () => {
             <img src={tvBtn} alt="tvBtn" />
           </div>
         </div>
-
         <div className="d-flex flex-row justify-content-center align-items-stretch gap-4">
           <div className="mainVideo text-white p-2">
             <div className="position-relative">
               <img src={tvMainVideo} alt="Main Hero" className="img-fluid" />
-
               <img
                 src={playVideo}
                 alt="Play"
-                className="position-absolute"
-                style={{
-                  top: "50%",
-                  left: "50%",
-                  transform: "translate(-50%, -50%)",
-                  width: "83px",
-                  height: "83px",
-                }}
+                className="position-absolute playVideo"
               />
-
               <img
                 src={tvTag}
                 alt="tvTag"
                 className="position-absolute bottom-0 end-0"
               />
             </div>
-
             <small className="text-secondary">18.09.24 | מרכז הנדל"ן</small>
             <p className="mt-3">
               מפנה מקום לחדש: אירוע הריסה של חברת אלרם בוטיק ברמברנדט 36
@@ -62,7 +49,6 @@ const NadlanTV = () => {
               הדיירים, ושמענו מהם על התחושות ביום ההריסה המורכב.
             </p>
           </div>
-
           <div className="d-flex flex-column justify-content-around">
             {[1, 2, 3].map((_, idx) => (
               <div
@@ -72,27 +58,13 @@ const NadlanTV = () => {
               >
                 <div className="position-relative">
                   <img src={articleImg} className="tvVideos p-2" />
-
-                  <img
-                    src={playVideo}
-                    alt="Play"
-                    className="position-absolute"
-                    style={{
-                      top: "50%",
-                      left: "50%",
-                      transform: "translate(-50%, -50%)",
-                      width: "50px",
-                      height: "50px",
-                    }}
-                  />
-
+                  <img src={playVideo} alt="Play" className=" smallVideos" />
                   <img
                     src={tvTag}
                     alt="tvTag"
                     className="position-absolute bottom-0 end-0 p-2"
                   />
                 </div>
-
                 <div className="p-2 text-end d-flex flex-column justify-content-center">
                   <p className="mb-1">{description}</p>
                   <small className="text-secondary">{date}</small>
@@ -105,5 +77,4 @@ const NadlanTV = () => {
     </div>
   );
 };
-
 export default NadlanTV;

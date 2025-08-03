@@ -86,15 +86,14 @@ body {
 }
 footer {
   background-color: #5806c7;
-
   color: white;
   .social-icons {
     display: flex;
     justify-content: center;
     gap: 10px;
-
+    margin-left: 20px;
     .social-icon {
-      margin-top: 30px;
+      margin-top: 25px;
       width: 35px;
       height: 35px;
       background-color: #5806c7;
@@ -130,7 +129,7 @@ footer {
   margin-bottom: 4px;
   transition: color 0.2s ease;
 }
-.allrightsreserved {
+.allRightsReserved {
   height: 105px;
   width: 100%;
   background-color: #130822;
@@ -228,7 +227,7 @@ footer {
   background-color: #130822;
 }
 img:hover {
-  opacity: 95%;
+  opacity: 90%;
 }
 .tvVideos {
   background-color: #130822;
@@ -250,14 +249,7 @@ img:hover {
   opacity: 1;
   padding-right: 15px;
 }
-.lineY {
-  width: 1437.0000000000014px;
-  height: 0px;
-  top: 195px;
-  left: 668px;
-  border-width: 1px;
-  opacity: 0.42;
-}
+
 .podcasts {
   margin-top: 60px;
   width: 1258px;
@@ -308,4 +300,49 @@ img:hover {
   top: 12px;
   left: 300px;
   opacity: 1;
+}
+.playVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+}
+.smallVideos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+}
+.orangeTag {
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+  width: 117px;
+  height: 24px;
+}
+.redTag {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 117px;
+  height: 24px;
+}
+.podBtn {
+  position: absolute;
+  bottom: 20px;
+  right: 16px;
+  width: 132px;
+  height: 27px;
+  cursor: pointer;
+}
+.lightBlueTag {
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+  width: 117px;
+  height: 24px;
 }

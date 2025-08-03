@@ -49,18 +49,7 @@ const Podcasts = () => {
 
                 <img src={playBtn} className="playBtn" alt="Play" />
 
-                <img
-                  src={podBtn}
-                  alt="Podcast"
-                  style={{
-                    position: "absolute",
-                    bottom: "20px",
-                    right: "16px",
-                    width: "132px",
-                    height: "27px",
-                    cursor: "pointer",
-                  }}
-                />
+                <img src={podBtn} alt="Podcast" className="podBtn" />
               </div>
             </div>
           ))}

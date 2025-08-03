@@ -1,5 +1,4 @@
 import topImg from "../media/topAdd.png";
-import add2 from "../media/add2.png";
 import mainHero from "../media/hero1.png";
 import lightGreenTag from "../media/lightGreenTag.png";
 import MoreArticles from "./MoreArticles.jsx";
@@ -8,7 +7,7 @@ const MainHero = () => {
     <>
       <main className="col-md-8 mt-5 border-start text-dark border-2 mx-auto">
         <div className="w-100 text-center mt-5 mb-5 ">
-          <img src={topImg} alt="פרסומת עליונה" className="img-fluid" />
+          <img src={topImg} alt="Top Add" className="img-fluid" />
         </div>
 
         <div className="mainHero mb-4">
@@ -18,7 +17,13 @@ const MainHero = () => {
               <img
                 src={lightGreenTag}
                 alt="Green Tag"
-                className="position-absolute bottom-0 end-0"
+                className="position-absolute "
+                style={{
+                  width: "166px",
+                  height: "37px",
+                  top: "250px",
+                  left: "261px",
+                }}
               />
             </div>
 
@@ -37,10 +42,6 @@ const MainHero = () => {
         </div>
 
         <MoreArticles />
-
-        <div className="mt-5">
-          <img src={add2} alt="פרסומת תחתונה" className="w-100 mt-5" />
-        </div>
       </main>
     </>
   );

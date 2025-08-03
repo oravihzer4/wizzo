@@ -36,20 +36,8 @@ const Section = ({ title, icon, articles }) => (
                 alt={article.title}
                 className="img-fluid mb-2"
               />
-
-              <img
-                src={lightBlueGroup}
-                alt="תגית"
-                className="position-absolute"
-                style={{
-                  bottom: "8px",
-                  right: "0",
-                  width: "117px",
-                  height: "24px",
-                }}
-              />
+              <img src={lightBlueGroup} alt="תגית" className="lightBlueTag" />
             </div>
-
             <p className="mb-5">{article.description}</p>
             <small className="text-muted d-block small">
               {article.time} | {article.writer}
@@ -67,7 +55,6 @@ const MagazineBanners = () => {
       {sections.map((section, idx) => {
         const isLast = idx === sections.length - 1;
         const shouldRenderAd = (idx + 1) % 2 === 0 && !isLast;
-
         return (
           <div key={section.title + idx}>
             <Section

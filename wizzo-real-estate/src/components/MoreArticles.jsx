@@ -1,6 +1,7 @@
 import articles from "../data/articlesData.js";
 import femaleAvatar from "../media/femaleAvatar.jpg";
 import redGroup from "../media/redGroup.png";
+import add2 from "../media/add2.png";
 
 const MoreArticles = () => {
   const sideArticles = articles;
@@ -19,17 +20,7 @@ const MoreArticles = () => {
                   alt={article.title}
                   style={{ width: "100%", height: "auto" }}
                 />
-                <img
-                  src={redGroup}
-                  alt="תגית"
-                  className="position-absolute"
-                  style={{
-                    bottom: "0",
-                    right: "0",
-                    width: "117px",
-                    height: "24px",
-                  }}
-                />
+                <img src={redGroup} alt="תגית" className="redTag" />
               </div>
               <p className="mb-2">{article.description}</p>
               <small className="text-muted">
@@ -38,6 +29,9 @@ const MoreArticles = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="mt-5">
+        <img src={add2} alt="bottomAdd" className="w-75" />
       </div>
     </div>
   );

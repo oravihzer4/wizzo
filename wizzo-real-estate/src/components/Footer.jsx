@@ -27,27 +27,27 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="social-icons m-3">
+          <div className="social-icons p-3">
             <div className="social-icon">
-              <FaYoutube />
-            </div>
-            <div className="social-icon">
-              <FaTimes />
-            </div>
-            <div className="social-icon">
-              <FaWhatsapp />
-            </div>
-            <div className="social-icon">
-              <FaTiktok />
-            </div>
-            <div className="social-icon">
-              <FaFacebook />
+              <FaInstagram />
             </div>
             <div className="social-icon">
               <FaLinkedin />
             </div>
             <div className="social-icon">
-              <FaInstagram />
+              <FaFacebook />
+            </div>
+            <div className="social-icon">
+              <FaTiktok />
+            </div>
+            <div className="social-icon">
+              <FaWhatsapp />
+            </div>
+            <div className="social-icon">
+              <FaTimes />
+            </div>
+            <div className="social-icon">
+              <FaYoutube />
             </div>
           </div>
         </div>
@@ -209,7 +209,7 @@ const Footer = () => {
         </div>
       </div>
       <br /> <br /> <br />
-      <div className="allrightsreserved">
+      <div className="allRightsReserved">
         <img src={rightsLogo} alt="rights" className="rightsLogo" />
         <div>
           <a href="www.wizzo.co.il">

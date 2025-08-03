@@ -1,6 +1,7 @@
 import { useState } from "react";
 import mainLogo from "../media/mainLogo.png";
 import mobileLogo from "../media/mobileLogo1.png";
+import mobileHamburger from "../media/mobileHamburger.png";
 import {
   FaYoutube,
   FaWhatsapp,
@@ -20,8 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="container-fluid">
-      {/* דסקטופ – תפריט רגיל */}
+    <div className="container-fluid p-0">
       <div className={`d-none d-md-block ${isMobileMenuOpen ? "d-none" : ""}`}>
         <div className="d-flex flex-row-reverse justify-content-between align-items-center">
           <div className="logoBox">
@@ -82,22 +82,36 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* מובייל – תפריט המבורגר */}
+      {/* Mobile Menu */}
       <div
         dir="rtl"
-        className="d-block d-md-none"
+        className="d-block d-md-none w-100"
         style={{ backgroundColor: "#5806c7", color: "white" }}
       >
         <div className="d-flex justify-content-between align-items-center p-2">
           <a href="/">
-            <img src={mobileLogo} alt="Logo" style={{ height: "40px" }} />
+            <img
+              src={mobileLogo}
+              className="m-1"
+              alt="Logo"
+              style={{ height: "60px" }}
+            />
           </a>
           <button
-            className="btn text-white"
+            className="btn text-white p-3"
             onClick={toggleMobileMenu}
             aria-label="Toggle Menu"
+            style={{ border: "none", background: "transparent" }}
           >
-            {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+            {isMobileMenuOpen ? (
+              <FaTimes size={24} />
+            ) : (
+              <img
+                src={mobileHamburger}
+                alt="Menu"
+                style={{ height: "24px", width: "24px" }}
+              />
+            )}
           </button>
         </div>
 
